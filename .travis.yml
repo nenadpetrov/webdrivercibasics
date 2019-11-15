@@ -22,9 +22,9 @@ language: java
 script:
 # FIREFOX Driver requires additional install
 # - mvn -f code/pom.xml test -Dselenium2basics.webdriver=FIREFOXLEGACY
-- mvn pom.xml clean test -Dselenium2basics.webdriver=HTMLUNIT
-- xvfb-run -e /dev/stdout --auto-servernum --server-args="-screen 0 1024x768x24" mvn pom.xml clean test -Dselenium2basics.webdriver=GOOGLECHROME
-- xvfb-run -e /dev/stdout --auto-servernum --server-args="-screen 0 1024x768x24" mvn pom.xml clean test -Dselenium2basics.webdriver=FIREFOX
+- mvn clean test -Dselenium2basics.webdriver=HTMLUNIT
+- xvfb-run -e /dev/stdout --auto-servernum --server-args="-screen 0 1024x768x24" mvn clean test -Dselenium2basics.webdriver=GOOGLECHROME
+- xvfb-run -e /dev/stdout --auto-servernum --server-args="-screen 0 1024x768x24" mvn clean test -Dselenium2basics.webdriver=FIREFOX
 jdk:
   - oraclejdk11
   - openjdk8
