@@ -105,6 +105,7 @@ public class Driver extends Thread{
             if("CHROME".contentEquals(defaultBrowser))
                 useThisDriver = BrowserName.GOOGLECHROME;
 
+
             if("GOOGLECHROME".contentEquals(defaultBrowser))
                 useThisDriver = BrowserName.GOOGLECHROME;
 
